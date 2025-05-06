@@ -1,18 +1,26 @@
 # ESP32-CE_HTTPS_Thermometer
-This is a simple thermometer made with a ESP32-C3 supermini, and a aht20+bmp280 module, it can mesure
-- Temperature
-- Relative umidity
-- Atmosferc pressure
+This project implements thermometer using an ESP32-C3 SuperMini and an AHT20+BMP280 sensor module. It measures:
+- Temperature (°C)
+- Relative humidity (%)
+- Atmospheric pressure (kPa)
 
 ![](Pictures/20250505_221746.png)
 
-The two compontes are weld together with a simple 3D printed case and are conected by simple solderin wires on then with the flowin wireing diagram
+#Hardware Assembly
+The components are assembled with a simple 3D printed case and connected via soldered wires according to the following table:
 
-| ESP32-C3 Super Mini Pin | I2C Thermometer Pin | Connection Notes |  
-|-------------------------|---------------------|------------------|  
-| `3V3`                   | `VCC` (or `VIN`)    | Power (3.3V)     |  
-| `GND`                   | `GND`               | Ground           |  
-| `GPIO4` (SCL)           | `SCL`               | I2C Clock        |  
-| `GPIO5` (SDA)           | `SDA`               | I2C Data         |  
+| ESP32-C3 Super Mini Pin | I2C Thermometer Pin | 
+|-------------------------|---------------------|
+| `3V3`                   | `VCC` (or `VIN`)    |
+| `GND`                   | `GND`               |
+| `GPIO4` (SCL)           | `SCL`               |
+| `GPIO5` (SDA)           | `SDA`               | 
 
 ![diagram](Pictures/Picture2.png)
+
+#Data Integration
+
+Sensor data is transmitted to ![tago.io](https://tago.io/) for cloud storage and dashboard visualization.
+Firmware Options
+  - ![Simple Connection](Simple_Connetion.h) Configure WiFi credentials directly in the code variables.
+  - ![Wifi-HS_Connection](Wifi-HS_Connection) On startup, the device creates a WiFi hotspot. By connecting to it, you can configure the proper WiFi network for permanent use. Network credentials are saved to EEPROM, them on the next starup it will atomaticaly reconect.
