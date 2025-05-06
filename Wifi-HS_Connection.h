@@ -17,7 +17,7 @@ const char* apPassword = "thermometer config";
 
 // Configurações Tago.io
 const char* server = "api.tago.io";
-const char* token = "d220bff2-3f56-4885-9937-bf32fbdbced1";
+const char* token = "";
 
 // Endereços I2C
 #define BMP280_ADDRESS 0x76
