@@ -7,7 +7,7 @@ This project implements thermometer using an ESP32-C3 SuperMini and an AHT20+BMP
 ![](Pictures/20250505_221746.png)
 
 # Hardware Assembly
-The components are assembled with a simple 3D printed case and connected via soldered wires according to the following table:
+The components are assembled with a simple 1[3D printed case](3D_Files/Thermometer_Case.step) and connected via soldered wires according to the following table:
 
 | ESP32-C3 Super Mini Pin | I2C Thermometer Pin | 
 |-------------------------|---------------------|
