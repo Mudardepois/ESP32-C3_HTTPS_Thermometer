@@ -24,5 +24,5 @@ The components are assembled with a simple 3D printed case and connected via sol
 Data is transmitted to ![tago.io](https://tago.io/) for cloud storage and dashboard visualization.
 
 Firmware Options
-  - ![Simple Connection](Simple_Connection) Configure WiFi credentials directly in the code variables.
-  - ![Wifi-HS_Connection](Wifi-HS_Connection) On startup, the device creates a WiFi hotspot. By connecting to it, you can configure the proper WiFi network for permanent use. Network credentials are saved to EEPROM, them on the next starup it will atomaticaly reconect.
+  - ![Simple Connection](Simple_Connection.h) Configure WiFi credentials directly in the code variables.
+  - ![Wifi-HS_Connection](Wifi-HS_Connection.h) On startup, the device creates a WiFi hotspot. By connecting to it, you can configure the proper WiFi network for permanent use. Network credentials are saved to EEPROM, them on the next starup it will atomaticaly reconect.
