@@ -4,7 +4,7 @@ This is a simple thermometer made with a ESP32-C3 supermini, and a aht20+bmp280 
 - Relative umidity
 - Atmosferc pressure
 
-![](Pictures/Picture3.jpg)
+![isso](Pictures/Picture3.jpg)
 
 The two compontes are weld together with a simple 3D printed case and are conected by simple solderin wires on then with the flowin wireing diagram
 
