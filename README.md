@@ -15,3 +15,4 @@ The two compontes are weld together with a simple 3D printed case and are conect
 | `GPIO4` (SCL)           | `SCL`               | I2C Clock        |  
 | `GPIO5` (SDA)           | `SDA`               | I2C Data         |  
 
+![diagram](Pictures/Picture2.png)
